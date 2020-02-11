@@ -43,7 +43,7 @@ class User extends Authenticatable
         return $this->hasMany('App\Models\Entrada', 'user_id', 'id');
     }
 
-    public function profiles()
+    public function profile()
     {
         return $this->hasOne('App\Models\Profile');
     }

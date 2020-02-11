@@ -12,6 +12,12 @@
 */
 use Illuminate\Support\Facades\DB;
 
+//perfiles y $usuarios 1:1
+Route::resource('/perfiles', 'ProfileController');
+
+Route::get('/borrado', 'ProfileController@borrar');
+//
+
 Route::get('/consulta', function () {
     //$usuarios=DB::table('users');
     //$usuarios=DB::table('users')->get();
